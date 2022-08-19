@@ -4,7 +4,18 @@
   "description": "BE Boilerplate for Snapraise Application Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.ts",
+    "test": "jest",
+    "format": "prettier --write \"./{src,test}/**/*.{ts,tsx,json}\"",
+    "lint": "eslint src --fix --ext .js,.jsx,.ts,.tsx",
+    "build": "npm run lint && tsc",
+    "prepare": "husky install",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && npm run lint"
+    }
   },
   "repository": {
     "type": "git",
