@@ -1,6 +1,6 @@
 overwrite: true
 schema: "src/**/*.schema.graphql"
-documents: null
+documents: ./src/**/*.graphql
 generates:
   src/_generated/graphql.ts:
     plugins:
