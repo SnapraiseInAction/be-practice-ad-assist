@@ -1,7 +1,5 @@
 import { GraphQLResolveInfo } from 'graphql';
-import { ResolvedUser } from '../user/models';
-import { ResolvedCourse } from '../course/models';
-import { ResolvedStudent, ResolvedCourseEnrolled } from '../student/models';
+import { ResolvedUser } from '../../user/models';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };

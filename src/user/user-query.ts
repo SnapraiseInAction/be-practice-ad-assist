@@ -1,5 +1,5 @@
 import { prisma } from "../server";
-import { QueryResolvers } from "../_generated/graphql";
+import { QueryResolvers } from "../utils/generated/graphql";
 
 export const usersQueryResolver: QueryResolvers["getUsers"] = async () => {
   const users = await prisma.user.findMany();

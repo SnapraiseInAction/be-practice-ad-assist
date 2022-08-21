@@ -1,4 +1,4 @@
-import { ResolverTypeWrapper } from "../_generated/graphql";
+import { ResolverTypeWrapper } from "../utils/generated/graphql";
 
 import { usersQueryResolver, userQueryResolver } from "../user/user-query";
 
