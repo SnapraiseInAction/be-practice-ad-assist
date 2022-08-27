@@ -17,16 +17,8 @@
       "pre-commit": "npm run format && npm run lint"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SnapraiseInAction/be-boilerplate.git"
-  },
-  "author": "Snapraise",
+  "author": "Regie Osano",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SnapraiseInAction/be-boilerplate/issues"
-  },
-  "homepage": "https://github.com/SnapraiseInAction/be-boilerplate#readme",
   "dependencies": {
     "@prisma/client": "^4.2.1",
     "apollo-server": "^3.10.1",
