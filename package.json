@@ -4,7 +4,7 @@
   "description": "BE Boilerplate for Snapraise Application Project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.ts",
+    "devstart": "nodemon src/server.ts",
     "test": "jest",
     "format": "prettier --write \"./{src,test}/**/*.{ts,tsx,json}\"",
     "lint": "eslint src --fix --ext .js,.jsx,.ts,.tsx",
