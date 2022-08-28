@@ -1,19 +1,19 @@
-type User {
-    id:          ID!
-    name:        String!
-    email:       String!
-    password:    String!
+type User @key(fields: "id") {
+    id: ID!
+    name: String!
+    email: String!
+    password: String!
 }
 
 type Auth {
-    user:   User!
-    token:  String!
+    user: User!
+    token: String!
     cookie: String!
 }
 
 type Query {
-    getUser:    User!
-    getUsers:   [User!]!
+    getUser: User!
+    getUsers: [User!]!
 }
 
 type Mutation {
